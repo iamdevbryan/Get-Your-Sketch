@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter';
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.title h1{
+    color: #323232;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.title h1 span{
+color: #9D00FF;
+font-weight: 900;
+}
+
+form{
+    margin-top: 80px;
+}
+
+.upload{
+    height: auto;
+    width: auto;
+}
+
+.upload label{
+    background-color: #840ECD;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.upload label:hover{
+    background-color: #6b10a3;
+}
+
+.upload label h1{
+    font-weight:300;
+    font-size: larger;
+    color: white;
+}
+
+
+.upload label img{
+    filter: brightness(0)invert(1);
+    height: 30px;
+    width: 30px;
+}
+
+
+.valid{
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valid label{
+    background-color: #840ECD;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    padding-right: 12px;
+    transition: 0.5s;
+}
+
+.valid label h1{
+    color: white;
+    font-weight:300;
+    font-size: larger;
+    margin-right: 15px;
+}
+
+.valid label img{
+    filter: brightness(0)invert(1);
+    height: 25px;
+    width: 25px;
+}
+
+.valid label:hover{
+    width: 160px;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 350px;
+    display: flex;
+    justify-content: end;
+}
+
+footer div{
+    margin-right: 50px;
+}
+
+footer div h1{
+    color: #323232;
+    margin-left:110px ;
+    font-weight: 600;
+}
+
+footer div h2{
+    color: #840ECD;
+    font-weight: 600;
+    margin-bottom: 50px;
+}

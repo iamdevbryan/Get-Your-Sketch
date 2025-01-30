@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter';
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+a{
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.again{
+    width: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color:  #9D00FF;
+    
+}
+
+.again h1{
+    color: white;
+    font-size: large;
+    font-weight: 300;
+}
+
+
+.valid{
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valid label{
+    background-color: #840ECD;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    padding-left: 12px;
+    transition: 0.3s;
+}
+
+.valid label h1{
+    color: white;
+    font-weight:300;
+    font-size: larger;
+    margin-left: 15px;
+}
+
+.valid label img{
+    filter: brightness(0)invert(1);
+    height: 25px;
+    width: 25px;
+    transform: rotate(180deg);
+}
+
+.valid label:hover{
+    width: 180px;
+}
+
+
+.back{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding-left: 50px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.title h1{
+    color: #323232;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.title h1 span{
+color: #9D00FF;
+font-weight: 900;
+}

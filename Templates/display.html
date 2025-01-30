@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/display.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="back">
+            <a href="{{ url_for('home') }}">
+                <div class="valid">
+                    <label for="valid" id="valid-label"><img src="{{ url_for('static', filename='images/foward.png') }}" alt=""> <h1>Do it again !</h1></label>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="image">
+            <img src="{{ url_for('static', filename = 'images/croquis.png') }}" alt="">
+        </div>
+
+      <div class="title"> <h1>Your skecth is <span>ready</span></h1> </div>  
+    </main>
+</body>
+</html>

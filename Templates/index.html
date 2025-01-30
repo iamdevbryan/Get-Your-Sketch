@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your sketch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1>Get your <span>Sketch</span></h1>
+        </div>
+
+        <form action="{{ url_for('traitement') }}" method="POST" enctype="multipart/form-data">
+            <div class="upload">
+                <label for="image"><h1>Upload</h1> <img src="{{ url_for('static', filename='images/upload.png') }}" alt=""></label> 
+                <input type="file" name="image" id="image" accept="image/*" style="display: none;">
+            </div>
+
+            <div class="valid">
+                <label for="valid" id="valid-label"> <h1>Generate</h1> <img src="{{ url_for('static', filename='images/foward.png') }}" alt=""></label>
+                <input type="submit" id="valid" style="display: none;">
+            </div>
+        </form>
+
+        <footer>
+            <div>
+                <h1>Made by</h1>
+            <h2>Rabi - Kassem - Mema - Bryan</h2>
+            </div> 
+            
+        </footer>
+    </main>
+</body>
+</html>
